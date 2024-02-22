@@ -1,0 +1,11 @@
+<form #filterForm="ngForm" (ngSubmit)="getDataFilter(filterForm)">
+  <div class="d-flex gap-2">
+    <select class="form-select" name="tipo" ngModel>
+      <option value="">Seleccion un tipo</option>
+      @for(tipo of tipos; track tipo.title){
+      <option [value]="tipo.value">{{tipo.title}}</option>
+      }
+    </select>
+    <input class="btn btn-sm btn-primary" type="submit" value="Filtrar">
+  </div>
+</form>

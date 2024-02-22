@@ -1,0 +1,32 @@
+<section class="container mt-3">
+  <h6>Añade tu Pokémon a tu pokedex personal</h6>
+  <hr>
+  <form [formGroup]="registerPokemon" (ngSubmit)="getDataForm()">
+    <div>
+      <label for="nombre" class="form-label">Nombre del pokemon</label>
+      <input type="text" id="nombre" class="form-control" formControlName="nombre">
+    </div>
+
+    <div>
+      <label for="numeroPokedex" class="form-label">Número en la Pokédex</label>
+      <input type="number" id="numeroPokedex" class="form-control" formControlName="numeroPokedex">
+    </div>
+
+    <div>
+      <label for="habilidad" class="form-label">Habilidad</label>
+      <input type="text" id="habilidad" class="form-control" formControlName="habilidad">
+    </div>
+
+    <div>
+      <label for="tipo" class="form-label">Tipo</label>
+      <input type="text" id="tipo" class="form-control" formControlName="tipo">
+    </div>
+
+    <div>
+      <label for="imagen" class="form-label">Imagen (URL)</label>
+      <input type="text" id="imagen" class="form-control" formControlName="imagen">
+    </div>
+
+    <input type="submit" class="btn btn-sm btn-danger mt-3" value="Guardar">
+  </form>
+</section>

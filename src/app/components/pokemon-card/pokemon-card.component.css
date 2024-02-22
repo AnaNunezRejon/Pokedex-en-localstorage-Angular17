@@ -1,0 +1,75 @@
+.pokemon-image {
+  max-width: 100%;
+  height: auto;
+}
+.water-type {
+  background-color: rgb(38, 207, 250);
+  color: white;
+}
+
+.fire-type {
+  background-color: red;
+  color: white;
+}
+
+.plant-type {
+  background-color: rgb(98, 197, 40);
+  color: white;
+}
+
+.electric-type {
+  background-color: yellow;
+}
+
+.roca-type {
+  background-color: rgb(92, 92, 92);
+  color: white;
+}
+
+.fantasma-type {
+  background-color: purple;
+  color: white;
+}
+
+.hielo-type {
+  background-color: rgb(161, 232, 255);
+}
+
+.psiquico-type {
+  background-color: pink;
+}
+
+.volador-type {
+  background-color: rgb(103, 145, 161);
+}
+
+.veneno-type {
+  background-color: purple;
+}
+
+.normal-type {
+  background-color: beige;
+}
+
+.tierra-type {
+  background-color: rgb(110, 48, 6);
+  color: white;
+}
+
+.hada-type {
+  background-color: pink;
+}
+
+.lucha-type {
+  background-color: rgb(255, 115, 0);
+  color: white;
+}
+
+.acero-type {
+  background-color: silver;
+}
+
+.dragon-type {
+  background-color: darkblue;
+  color: white;
+}

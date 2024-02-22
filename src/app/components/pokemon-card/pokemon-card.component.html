@@ -1,0 +1,17 @@
+<div class="card shadow w-100">
+  <h3 class="card-header text-center">{{ miPokemon.nombre }}</h3>
+
+  <div class="d-flex p-3">
+    <div class="img-container" style="flex: 1;">
+      <img src="{{ miPokemon.imagen }}" alt="Imagen de {{ miPokemon.nombre }}" class="img-fluid pokemon-image">
+    </div>
+    <div style="flex: 1;" class="row g-2">
+      <ul class="list-group">
+        <li class="list-group-item">Número en la pokedex: {{ miPokemon.numeroPokedex }}</li>
+        <li class="list-group-item">Habilidad: {{ miPokemon.habilidad }}</li>
+        <li class="list-group-item" [ngClass]="getPokemonTypeClass(miPokemon.tipo)">{{ miPokemon.tipo }}</li>
+      </ul>
+      <button class="btn btn-danger w-100" (click)="confirmDelete()">Eliminar</button>
+    </div>
+  </div>
+</div>

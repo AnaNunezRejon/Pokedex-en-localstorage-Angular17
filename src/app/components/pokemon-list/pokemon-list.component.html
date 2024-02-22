@@ -1,0 +1,15 @@
+<section class="container mt-3">
+  <h2> Mis pokemons</h2>
+  <app-filters (tipoSeleccionado)="getTipo($event)"></app-filters>
+  <hr>
+  <div class="row g-2">
+    @for(pokemon of pokemons; track pokemon.id){
+      <article class="col-12 col-md-6 col-lg-4">
+        <app-pokemon-card [miPokemon]="pokemon"></app-pokemon-card>
+      </article>
+    }@empty {
+      <H2>No hay resultados</H2>
+    }
+
+  </div>
+</section>
